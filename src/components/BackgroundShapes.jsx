@@ -1,0 +1,54 @@
+export function BackgroundShapes() {
+	return (
+		<>
+			<svg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 800 800'>
+				<defs>
+					<filter
+						id='bbblurry-filter'
+						x='-100%'
+						y='-100%'
+						width='400%'
+						height='400%'
+						filterUnits='objectBoundingBox'
+						primitiveUnits='userSpaceOnUse'
+						colorInterpolationFilters='sRGB'
+					>
+						<feGaussianBlur
+							stdDeviation='40'
+							x='0%'
+							y='0%'
+							width='100%'
+							height='100%'
+							in='SourceGraphic'
+							edgeMode='none'
+							result='blur'
+						></feGaussianBlur>
+					</filter>
+				</defs>
+				<g filter='url(#bbblurry-filter)'>
+					<ellipse
+						rx='150'
+						ry='150'
+						cx='512.2210301903528'
+						cy='287.97555142547446'
+						fill='#de4739ff'
+					></ellipse>
+					<ellipse
+						rx='150'
+						ry='150'
+						cx='254.1378631591797'
+						cy='319.68792724609375'
+						fill='#5e92bc'
+					></ellipse>
+					<ellipse
+						rx='150'
+						ry='150'
+						cx='383.1447320908153'
+						cy='547.7527986696253'
+						fill='#f6d8c2ff'
+					></ellipse>
+				</g>
+			</svg>
+		</>
+	)
+}
